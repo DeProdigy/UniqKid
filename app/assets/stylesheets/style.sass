@@ -1,0 +1,83 @@
+$background-color: white
+$text-color: #1760B0
+$border-color: #F56C02
+$font: 'Josefin Sans', sans-serif
+$placeholder-color: #1760B0
+$opacity: 0.7
+
+.round-corners
+  border-bottom-color: $border-color
+  border-bottom-left-radius: 3px
+  border-bottom-right-radius: 3px
+  border-bottom-style: solid
+  border-bottom-width: 3px
+  border-left-color: $border-color
+  border-left-style: solid
+  border-left-width: 3px
+  border-right-color: $border-color
+  border-right-style: solid
+  border-right-width: 3px
+  border-top-color: $border-color
+  border-top-left-radius: 3px
+  border-top-right-radius: 3px
+  border-top-style: solid
+  border-top-width: 3px
+
+body
+  background: $background-color
+  text-align: center
+  color: $text-color
+  font-family: $font
+
+img
+  width: 40%
+
+p
+  margin: 0 auto
+  width: 60%
+  margin-top: 3%
+  word-spacing: 5px
+  line-height: 130%
+  font-size: 1.3em
+
+input
+  @extend .round-corners
+  margin-top: 3%
+  width: 30%
+  padding: 10px
+  background: rgba(255, 255, 255, 0.1)
+  color: $text-color
+  font-size: 1em
+  font-family: $font
+  text-align: center
+  opacity: $opacity
+
+  //changes the placeholder color
+  -webkit-input-placeholder
+    color: $placeholder-color
+  -moz-placeholder
+    color: $placeholder-color
+  -moz-placeholder
+    color: $placeholder-color
+  -ms-input-placeholder
+    color: $placeholder-color
+
+button
+  @extend .round-corners
+  position: relative
+  top: 8px
+  clear: both
+  padding: 0px
+  width: 10%
+  background: $border-color
+  border: none
+  height: 42px
+  color: $placeholder-color
+  font-size: 2em
+  opacity: $opacity
+  &:hover
+    opacity: 0.8
+
+//take away the blue focus border
+*:focus
+  outline: 0

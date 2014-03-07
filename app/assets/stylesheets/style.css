@@ -2,8 +2,58 @@ body {
   background: #2C97DE;
   text-align: center;
   color: white;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 img {
   width: 40%;
+}
+
+p {
+  margin: 0 auto;
+  width: 60%;
+  margin-top: 3%;
+  word-spacing: 5px;
+  line-height: 130%;
+  font-size: 1.3em;
+}
+
+input {
+  margin-top: 3%;
+  width: 30%;
+  padding: 10px;
+  background: rgba(255,255,255,0.2);
+  color: white;
+  font-size: 0.8em;
+
+  /*styling from stack*/
+  border-bottom-color: #F36C06;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-left-color: #F36C06;
+  border-left-style: solid;
+  border-left-width: 3px;
+  border-right-color: #F36C06;
+  border-right-style: solid;
+  border-right-width: 3px;
+  border-top-color: #F36C06;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 3px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    white;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    white;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    white;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    white;
 }

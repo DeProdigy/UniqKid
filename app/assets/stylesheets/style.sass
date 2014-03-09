@@ -1,8 +1,8 @@
-$background-color: white
-$text-color: #1760B0
-$border-color: #F56C02
+$background-color: #E74C3C
+$text-color: white
+$border-color: #2C3E50
 $font: 'Josefin Sans', sans-serif
-$placeholder-color: #1760B0
+$placeholder-color: white
 $opacity: 0.7
 
 .round-corners
@@ -51,16 +51,19 @@ input
   font-size: 1em
   font-family: $font
   text-align: center
-  opacity: $opacity
 
   //changes the placeholder color
-  -webkit-input-placeholder
+  @mixin placeholder-color($placeholder-color)
+  &.placeholder
     color: $placeholder-color
-  -moz-placeholder
+
+  &:-moz-placeholder
     color: $placeholder-color
-  -moz-placeholder
+
+  &::-webkit-input-placeholder
     color: $placeholder-color
-  -ms-input-placeholder
+
+  &:-ms-input-placeholder
     color: $placeholder-color
 
 button
@@ -75,9 +78,8 @@ button
   height: 42px
   color: $placeholder-color
   font-size: 2em
-  opacity: $opacity
   &:hover
-    opacity: 0.8
+    opacity: 0.9
 
 //take away the blue focus border
 *:focus

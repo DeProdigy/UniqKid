@@ -10,6 +10,6 @@
   %input{type: 'submit', value: '☺', id: 'signup-button'}
 
 %ul{id: 'social-media'}
-  = image_tag('facebook.png')
-  = image_tag('pinterest.png')
-  = image_tag('tumblr.png')
+  = link_to image_tag('facebook.png'), 'http://www.facebook.com/uniqkid/', target: 'blank'
+  = link_to image_tag('pinterest.png'), 'http://www.pinterest.com/uniqkid/', target: 'blank'
+  = link_to image_tag('tumblr.png'), 'http://uniq-kid.tumblr.com', target: 'blank'
